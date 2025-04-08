@@ -33,7 +33,12 @@ window.addEventListener("click", function(e) {
   });
 });
 
+function toggleAllFAQ() {
+  const faq = document.getElementById("faq-section");
+  faq.style.display = faq.style.display === "block" ? "none" : "block";
+}
+
 function toggleFAQ(btn) {
   const item = btn.parentElement;
-  item.classList.toggle('active');
+  item.classList.toggle("active");
 }
