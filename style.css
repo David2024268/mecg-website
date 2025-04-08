@@ -298,6 +298,61 @@ body {
 .faq-item.active .faq-answer {
   display: block;
 }
+/* Contact form */
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: #FFCB05;
+  color: #00274C;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #f0ba00;
+}
+
+.contact-info {
+  margin-top: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.contact-info a {
+  color: #00274C;
+  text-decoration: underline;
+}
 
 /* -------- CONTACT SECTION -------- */
 .contact {
