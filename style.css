@@ -231,28 +231,50 @@ body {
   color: #00274C;
   cursor: pointer;
 }
-.faq {
+/* FAQ Section */
+.faq-wrapper {
   margin-top: 2rem;
 }
 
-.faq-item {
-  border: 2px solid #00274C;
+.faq-expand-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #FFCB05;
+  color: #00274C;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
   border-radius: 8px;
-  margin-bottom: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-expand-btn .arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  padding: 1.2rem;
-  background-color: #FFCB05;
-  color: #00274C;
+  padding: 1rem;
+  background-color: #eee;
   font-weight: bold;
-  text-align: left;
-  font-size: 1rem;
   border: none;
   cursor: pointer;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,16 +291,13 @@ body {
 
 .faq-answer {
   display: none;
-  background-color: #f9f9f9;
-  padding: 1.2rem;
-  font-size: 0.95rem;
-  color: #333;
+  padding: 1rem;
+  background: #f9f9f9;
 }
 
 .faq-item.active .faq-answer {
   display: block;
 }
-
 
 /* -------- CONTACT SECTION -------- */
 .contact {
