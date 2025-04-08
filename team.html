@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MECG | Our Team</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -19,9 +19,40 @@
     </ul>
   </nav>
 
-  <main class="content">
-    <h1>Our Team</h1>
-    <p>Meet our executive board and project leads who make MECG possible.</p>
+  <main class="content section">
+    <h1>Meet the Team</h1>
+
+    <h2>Executive Board</h2>
+    <div class="team-grid">
+      <div class="team-member" onclick="openModal('jules')">
+        <img src="https://via.placeholder.com/160" alt="Jules Hwang" />
+        <h3>Jules Hwang</h3>
+        <p>President</p>
+        <a href="#" class="linkedin-btn" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+      </div>
+
+      <!-- Add more team-member blocks just like above -->
+    </div>
+
+    <h2>Analysts</h2>
+    <p>First Last • First Last • First Last • First Last • First Last • First Last</p>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Michigan Engineering Consulting Group<br>University of Michigan - Ann Arbor</p>
+    </section>
   </main>
+
+  <!-- BIO MODALS -->
+  <div id="modal-jules" class="bio-modal">
+    <div class="bio-modal-content">
+      <span class="close-btn" onclick="closeModal('jules')">&times;</span>
+      <h2>Jules Hwang</h2>
+      <h4>President</h4>
+      <p>Jules is the founding President of MECG and a Mechanical Engineering major. He’s passionate about combining engineering with business impact. In his free time, he enjoys photography and snowboarding.</p>
+    </div>
+  </div>
+
+  <!-- Add more modals for other members (just copy and update IDs/names) -->
 </body>
 </html>
