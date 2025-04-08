@@ -66,3 +66,39 @@ button {
   border: none;
   cursor: pointer;
 }
+.pillars li {
+  background: #FFCB05;
+  color: #00274C;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.team-gallery {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00274C;
+}
+.member {
+  text-align: center;
+}
+.faq .faq-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.answer {
+  display: none;
+  margin-top: 0.5rem;
+  color: #444;
+}
+.faq-item.open .answer {
+  display: block;
+}
