@@ -1,12 +1,18 @@
-// Handle contact form submission (placeholder)
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Message submitted! (Note: No backend is connected yet)");
-});
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll(".testimonial");
 
-// FAQ toggle interaction
-document.querySelectorAll(".faq-item").forEach(item => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("open");
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.toggle("active", i === index);
   });
-});
+}
+
+function nextTestimonial() {
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  showTestimonial(currentTestimonial);
+}
+
+function prevTestimonial() {
+  currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(currentTestimonial);
+}
