@@ -6,6 +6,59 @@
   <title>MECG | Home</title>
   <link rel="stylesheet" href="style.css"/>
   <script defer src="script.js"></script>
+  <style>
+    .section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      margin: 2rem 0;
+    }
+    .carousel {
+      display: flex;
+      animation: scroll-left 20s linear infinite;
+    }
+    .carousel img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .testimonial-container {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+    .testimonial {
+      display: none;
+    }
+    .testimonial.active {
+      display: block;
+    }
+    .testimonial-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+    .testimonial-nav button {
+      padding: 0.5rem 1rem;
+      background-color: #00274C;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -19,9 +72,53 @@
     </ul>
   </nav>
 
-  <main class="content">
-    <h1>Home</h1>
-    <p>This is the home page content.</p>
+  <main class="content section">
+    <h1>Welcome to MECG</h1>
+    <p>Michigan Engineering Consulting Group is a pro-bono consulting group open to all majors at the University of Michigan.</p>
+
+    <p>MECG places an emphasis on a community of diverse students that share one thing: a passion to learn more about consulting and gain hands-on experiences in the field. Our four pillars (Professional Development, Education, Project Experience, and Community) drive our impact on real companies and members’ careers.</p>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Rotating 1">
+        <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Rotating 2">
+        <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Rotating 3">
+        <img src="https://via.placeholder.com/300x200?text=Image+4" alt="Rotating 4">
+      </div>
+    </div>
+
+    <h2>President’s Welcome</h2>
+    <p>Hi there! Welcome to MECG’s official website! Thank you for your interest in MECG and exploring what we have to offer. Founded by a group of like-minded engineers, we are committed to delivering high-impact solutions while providing consulting opportunities for students.</p>
+
+    <p>When I joined MECG as a part of the first class of new members, I was looking for a space where I could further my knowledge of consulting as an engineer and build strong connections with others. As President, I strive to ensure that MECG offers just that: an organization where all students, regardless of their background or experience, feel welcomed and supported.</p>
+
+    <p>At MECG, the only quality that we look for in students is the eagerness to learn more about the consulting world. I believe that anyone who wishes to broaden their understanding in consulting should feel empowered to do so. By providing a full education curriculum, wide range of project experiences, and early career opportunities, MECG is here to help you grow.</p>
+
+    <p>I encourage you to step out of your comfort zone and seek the professional growth and community that MECG has to offer. Please don’t hesitate to contact us at mecg-board@umich.edu or follow @mecgmichigan on Instagram for more updates.</p>
+
+    <p>Best,<br>Jules Hwang<br>President of MECG, 2025</p>
+
+    <h2>Student Testimonials</h2>
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.”</p>
+        <p>- First Last, Class of 20XX, Position</p>
+      </div>
+      <div class="testimonial">
+        <p>“Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.”</p>
+        <p>- Another Student, Class of 20YY, Analyst</p>
+      </div>
+      <div class="testimonial-nav">
+        <button onclick="prevTestimonial()">← Previous</button>
+        <button onclick="nextTestimonial()">Next →</button>
+      </div>
+    </div>
+
+    <h2>Beyond MECG</h2>
+    <p>With a wide breadth of different majors and professional interests, our alumni and members work in almost every industry, with a particular focus on consulting, engineering, and technology.</p>
+
+    <h3>Contact Us</h3>
+    <p>Michigan Engineering Consulting Group<br>University of Michigan - Ann Arbor<br>Email: mecg-board@umich.edu</p>
   </main>
 </body>
 </html>
