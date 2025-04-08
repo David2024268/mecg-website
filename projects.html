@@ -21,12 +21,66 @@
 
   <main class="content section">
     <h1>Our Services</h1>
-    <div class="services">
-      <div class="service-card">Strategy</div>
-      <div class="service-card">Marketing</div>
-      <div class="service-card">Operations & Management</div>
-      <div class="service-card">Product Development</div>
-      <div class="service-card">Data Analytics</div>
+    <div class="services-flip">
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://via.placeholder.com/40?text=S" alt="Strategy Icon" />
+            <p>Strategy</p>
+          </div>
+          <div class="flip-card-back">
+            <p>We analyze company goals and competitive positioning to recommend strategic direction.<br><br><br></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://via.placeholder.com/40?text=M" alt="Marketing Icon" />
+            <p>Marketing</p>
+          </div>
+          <div class="flip-card-back">
+            <p>We help build branding, outreach, and customer segmentation strategies.<br><br><br></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://via.placeholder.com/40?text=O" alt="Operations Icon" />
+            <p>Operations & Mgmt</p>
+          </div>
+          <div class="flip-card-back">
+            <p>From logistics to team structure, we improve operational efficiency.<br><br><br></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://via.placeholder.com/40?text=P" alt="Product Icon" />
+            <p>Product Development</p>
+          </div>
+          <div class="flip-card-back">
+            <p>We support product planning, design, prototyping, and launch strategy.<br><br><br></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://via.placeholder.com/40?text=D" alt="Data Icon" />
+            <p>Data Analytics</p>
+          </div>
+          <div class="flip-card-back">
+            <p>We build dashboards, models, and insights to inform decisions.<br><br><br></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <h2>Project Timeline</h2>
@@ -62,10 +116,14 @@
     </div>
 
     <h2>Past Clients</h2>
-    <div class="clients">
-      <img src="https://via.placeholder.com/120x60?text=Client+1" alt="Client Logo 1">
-      <img src="https://via.placeholder.com/120x60?text=Client+2" alt="Client Logo 2">
-      <img src="https://via.placeholder.com/120x60?text=Client+3" alt="Client Logo 3">
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="https://via.placeholder.com/120x60?text=Client+1" alt="Client Logo 1">
+        <img src="https://via.placeholder.com/120x60?text=Client+2" alt="Client Logo 2">
+        <img src="https://via.placeholder.com/120x60?text=Client+3" alt="Client Logo 3">
+        <img src="https://via.placeholder.com/120x60?text=Client+4" alt="Client Logo 4">
+        <img src="https://via.placeholder.com/120x60?text=Client+5" alt="Client Logo 5">
+      </div>
     </div>
 
     <section class="contact">
