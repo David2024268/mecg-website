@@ -1,4 +1,4 @@
-// Form submit handler (no backend connected)
+// Handle contact form submission (placeholder)
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   alert("Message submitted! (Note: No backend is connected yet)");
