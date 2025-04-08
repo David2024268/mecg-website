@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MECG | Contact Us</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="navbar">
@@ -19,9 +18,40 @@
     </ul>
   </nav>
 
-  <main class="content">
+  <main class="content section">
     <h1>Contact Us</h1>
-    <p>Email: mecg-board@umich.edu<br>Instagram: @mecgmichigan</p>
+
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Michigan Engineering Consulting Group</h3>
+      <p>University of Michigan - Ann Arbor</p>
+      <p>Email: <a href="mailto:mecg-board@umich.edu">mecg-board@umich.edu</a></p>
+      <p>Instagram: <a href="https://instagram.com/mecgmichigan" target="_blank">@mecgmichigan</a></p>
+    </div>
   </main>
 </body>
 </html>
