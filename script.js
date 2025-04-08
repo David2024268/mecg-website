@@ -32,6 +32,7 @@ window.addEventListener("click", function(e) {
     }
   });
 });
+
 function toggleFAQ(btn) {
   const item = btn.parentElement;
   item.classList.toggle('active');
